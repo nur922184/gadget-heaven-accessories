@@ -1,0 +1,188 @@
+[
+    {
+        "product_id": "L001",
+        "product_title": "Laptop Pro 15",
+        "product_image": "https://tradingshenzhen.com/img/cms/laptops/Xiaomi_MiNotebookPro15/tradingshenzhen_minotebookpro15_4.jpg",
+        "category": "Laptops",
+        "price": 1199.99,
+        "description": "High-performance 15-inch laptop with powerful processor and ample storage.",
+        "Specification": [
+            "Screen Size: 15.6 inches",
+            "Processor: Intel Core i7",
+            "RAM: 16GB",
+            "Storage: 512GB SSD",
+            "Operating System: Windows 11"
+        ],
+        "availability": true,
+        "rating": 4.7,
+        "brand": "TechPlus",
+        "warranty": "1 year"
+    },
+    {
+        "product_id": "L002",
+        "product_title": "UltraBook Slim",
+        "product_image": "https://cdn.mos.cms.futurecdn.net/8BHQFHBNDTS7hwEbVbnMGZ.jpg",
+        "category": "Laptops",
+        "price": 899.99,
+        "description": "Lightweight and portable 13-inch ultrabook with long battery life.",
+        "Specification": [
+            "Screen Size: 13.3 inches",
+            "Processor: AMD Ryzen 5",
+            "RAM: 8GB",
+            "Storage: 256GB SSD",
+            "Battery Life: Up to 12 hours"
+        ],
+        "availability": true,
+        "rating": 4.5,
+        "brand": "NanoTech",
+        "color": "Silver"
+    },
+    {
+        "product_id": "P001",
+        "product_title": "Smartphone G9",
+        "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj1SpkCu4eKxCtxqDeBRZI37X88WK_kwXaYA&s",
+        "category": "Phones",
+        "price": 599.99,
+        "description": "Flagship smartphone with quad-camera setup and high-speed processor.",
+        "Specification": [
+            "Screen Size: 6.7 inches",
+            "Processor: Snapdragon 888",
+            "RAM: 8GB",
+            "Storage: 128GB",
+            "Camera: Quad 64MP"
+        ],
+        "availability": true,
+        "rating": 4.6,
+        "brand": "SmartTech",
+        "warranty": "1 year"
+    },
+    {
+        "product_id": "P002",
+        "product_title": "Budget Phone Lite",
+        "product_image": "https://www.mobiledokan.com/media/symphony-g27-lite-ice-green-official-image.webp",
+        "category": "Phones",
+        "price": 199.99,
+        "description": "Affordable smartphone with dual cameras and decent performance.",
+        "Specification": [
+            "Screen Size: 6.1 inches",
+            "Processor: MediaTek Helio P60",
+            "RAM: 4GB",
+            "Storage: 64GB",
+            "Camera: Dual 12MP"
+        ],
+        "availability": true,
+        "rating": 4.2,
+        "brand": "EconoPhone",
+        "color": "Black"
+    },
+    {
+        "product_id": "SW001",
+        "product_title": "Fitness Smart Watch",
+        "product_image": "https://luxurywatchbd.com/wp-content/uploads/2022/10/311074311_1107356349899109_1054899661320215755_n.jpg",
+        "category": "Smart Watches",
+        "price": 79.99,
+        "description": "Fitness smartwatch with heart rate monitor, GPS, and waterproof design.",
+        "Specification": [
+            "Battery Life: 10 days",
+            "Heart Rate Monitor: Yes",
+            "GPS: Yes",
+            "Water Resistance: IP68"
+        ],
+        "availability": true,
+        "rating": 4.4,
+        "brand": "HealthTrack",
+        "color": "Blue"
+    },
+    {
+        "product_id": "SW002",
+        "product_title": "Luxury Smart Watch",
+        "product_image": "https://bugatti-smartwatches.com/cdn/shop/articles/the-first-carbon-fiber-smartwatch.jpg?v=1711103448&width=2048",
+        "category": "Smart Watches",
+        "price": 249.99,
+        "description": "Elegant smartwatch with AMOLED display and extensive health tracking features.",
+        "Specification": [
+            "Screen Type: AMOLED",
+            "Battery Life: 7 days",
+            "Heart Rate Monitor: Yes",
+            "Water Resistance: 5 ATM"
+        ],
+        "availability": true,
+        "rating": 4.8,
+        "brand": "StyleTech",
+        "color": "Gold"
+    },
+    {
+        "product_id": "M001",
+        "product_title": "MacBook Air 13",
+        "product_image": "https://www.custommacbd.com/cdn/shop/files/mba13-m3-midnight-Custom-Mac-BD_1200x1200.png?v=1711705803",
+        "category": "MacBook",
+        "price": 999.99,
+        "description": "13-inch MacBook Air with M1 chip, ideal for productivity and daily use.",
+        "Specification": [
+            "Screen Size: 13.3 inches",
+            "Processor: Apple M1",
+            "RAM: 8GB",
+            "Storage: 256GB SSD",
+            "Battery Life: Up to 18 hours"
+        ],
+        "availability": true,
+        "rating": 4.9,
+        "brand": "Apple",
+        "color": "Space Gray"
+    },
+    {
+        "product_id": "M002",
+        "product_title": "MacBook Pro 14",
+        "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQepSteTlT5lsXJ2P2V7vrOGYGmIf7nbquFrg&s",
+        "category": "MacBook",
+        "price": 1999.99,
+        "description": "Powerful 14-inch MacBook Pro with M1 Pro chip, ideal for professionals.",
+        "Specification": [
+            "Screen Size: 14 inches",
+            "Processor: Apple M1 Pro",
+            "RAM: 16GB",
+            "Storage: 512GB SSD",
+            "Battery Life: Up to 17 hours"
+        ],
+        "availability": true,
+        "rating": 5.0,
+        "brand": "Apple",
+        "color": "Silver"
+    },
+    {
+        "product_id": "IA001",
+        "product_title": "iPhone 12 Case",
+        "product_image": "https://static.independent.co.uk/2021/07/15/14/phone%20cases.jpg",
+        "category": "iPhone Accessories",
+        "price": 19.99,
+        "description": "Durable iPhone 12 case with shock absorption and raised edges for screen protection.",
+        "Specification": [
+            "Material: TPU",
+            "Compatibility: iPhone 12",
+            "Protection: Shock absorption",
+            "Color: Clear"
+        ],
+        "availability": true,
+        "rating": 4.3,
+        "brand": "SafeGuard",
+        "color": "Clear"
+    },
+    {
+        "product_id": "IA002",
+        "product_title": "iPhone Charger Cable",
+        "product_image": "https://www.primebazar.com/public/uploads/all/chOYFjXvz2FbjQ9vJmnTNnmsiZGaERst32Grr5GW.jpg",
+        "category": "iPhone Accessories",
+        "price": 14.99,
+        "description": "Fast charging USB-C to Lightning cable for iPhone with durable braided design.",
+        "Specification": [
+            "Length: 1 meter",
+            "Compatibility: iPhone models with Lightning port",
+            "Durability: Braided design",
+            "Color: White"
+        ],
+        "availability": true,
+        "rating": 4.5,
+        "brand": "QuickCharge",
+        "warranty": "1 year"
+    }
+]

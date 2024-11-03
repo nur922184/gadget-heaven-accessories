@@ -4,6 +4,7 @@ import { HiShoppingCart } from "react-icons/hi";
 import { TiThMenu } from "react-icons/ti";
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Navber = () => {
@@ -14,17 +15,22 @@ const Navber = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+    const handleMenuItemClick = () => {
+
+        setIsMenuOpen(false);
+    };
 
     return (
-        <nav className="flex items-center justify-between p-4 bg-white shadow-md">
+        <nav className=" sticky top-0 z-50 flex items-center justify-between p-4 bg-white shadow-md">
             {/* Brand */}
             <div className="text-2xl font-bold text-gray-800">Gadget Heaven</div>
 
             {/* Desktop Links */}
             <ul className="hidden md:flex space-x-8 text-gray-700">
-                <li className="cursor-pointer hover:text-purple-600"> Home</li>
-                <li className="cursor-pointer hover:text-purple-600">Statistics</li>
-                <li className="cursor-pointer hover:text-purple-600">Dashboard</li>
+                <Link to='/' className="cursor-pointer hover:text-purple-600"> Home</Link>
+                <Link to='/statistics' className="cursor-pointer hover:text-purple-600">Statistics</Link>
+                <Link to='/dashboard' className="cursor-pointer hover:text-purple-600">Dashboard</Link>
+                <Link to='/testimonials' className="cursor-pointer hover:text-purple-600">Testimonials</Link>
             </ul>
 
             {/* Desktop Icons */}
@@ -41,9 +47,10 @@ const Navber = () => {
             {/* Mobile Menu (shown when isMenuOpen is true) */}
             {isMenuOpen && (
                 <ul className="absolute top-16 right-0 w-[50%] bg-white shadow-lg flex flex-col items-center space-y-4 p-4 md:hidden">
-                    <li className="cursor-pointer hover:text-purple-600"> Home</li>
-                    <li className="cursor-pointer hover:text-purple-600">Statistics</li>
-                    <li className="cursor-pointer hover:text-purple-600">Dashboard</li>
+                    <Link to='/' onClick={handleMenuItemClick} className="cursor-pointer hover:text-purple-600"> Home</Link>
+                    <Link to='/statistics' onClick={handleMenuItemClick} className="cursor-pointer hover:text-purple-600">Statistics</Link>
+                    <Link to='/dashboard' onClick={handleMenuItemClick} className="cursor-pointer hover:text-purple-600">Dashboard</Link>
+                    <Link to='/testimonials' onClick={handleMenuItemClick} className="cursor-pointer hover:text-purple-600">Testimonials</Link>
                 </ul>
             )
             }
