@@ -10,6 +10,7 @@ import Home from './Pages/Home';
 import Dashborad from './Pages/Dashborad';
 import Statistics from './Pages/Statistics';
 import Testimonials from './Pages/Testimonials';
+import NotFound from './Pages/NotFound';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       },
     ]
   },
+  {
+    path:"*", 
+    element: <NotFound></NotFound>
+  }
 ]);
 
 
