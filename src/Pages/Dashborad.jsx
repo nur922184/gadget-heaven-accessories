@@ -23,22 +23,6 @@ const Dashborad = () => {
                     </button>
                 </div>
             </div>
-            {/* <div className="p-6">
-                <h2 className="text-2xl font-bold mb-4">Cart Items</h2>
-                {cartItems.length > 0 ? (
-                    <div className="grid gap-4">
-                        {cartItems.map((item, index) => (
-                            <div key={index} className="border rounded-lg p-4 bg-gray-100">
-                                <img src={item.product_image} alt={item.product_title} className="w-16 h-16 object-cover rounded-lg mb-2" />
-                                <h3 className="font-bold">{item.product_title}</h3>
-                                <p>Price: ${item.price}</p>
-                            </div>
-                        ))}
-                    </div>
-                ) : (
-                    <p className="text-gray-600">No items in cart.</p>
-                )}
-            </div> */}
         </div>
     );
 };
