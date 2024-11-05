@@ -1,18 +1,19 @@
-// src/App.js
 import React from 'react';
-import { CartProvider } from './component/CartContext';
-import ProductGrid from './component/ProductGrid';
-// import Dashborad from './Pages/Dashborad';
-// import ProductDetails from './component/ProductDetails';
+import ProductDetails from '../component/ProductDetails';
+import Dashborad from '../Pages/Dashborad';
+import { CartProvider } from '../CartContext';
+
 
 function App() {
     return (
         <CartProvider>
-            <ProductGrid></ProductGrid>
-            {/* <Dashborad></Dashborad>
-            <ProductDetails></ProductDetails> */}
+            <ProductDetails></ProductDetails>
+            <Dashborad></Dashborad>
         </CartProvider>
-       
+        // <CartProvider>
+        //     <ProductDetails />
+        //     <Dashboard />
+        // </CartProvider>
     );
 }
 
