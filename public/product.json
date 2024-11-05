@@ -21,7 +21,7 @@
     {
         "product_id": "L002",
         "product_title": "UltraBook Slim",
-        "product_image": "https://cdn.mos.cms.futurecdn.net/8BHQFHBNDTS7hwEbVbnMGZ.jpg",
+        "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn7aLgJNbhIlhpHD2CTI_EUScQdWqxQ8irwg&s",
         "category": "Laptops",
         "price": 899.99,
         "description": "Lightweight and portable 13-inch ultrabook with long battery life.",
@@ -153,7 +153,7 @@
         "product_id": "IA001",
         "product_title": "iPhone 12 Case",
         "product_image": "https://static.independent.co.uk/2021/07/15/14/phone%20cases.jpg",
-        "category": "iPhone Accessories",
+        "category": "iPhone",
         "price": 19.99,
         "description": "Durable iPhone 12 case with shock absorption and raised edges for screen protection.",
         "Specification": [
@@ -171,7 +171,7 @@
         "product_id": "IA002",
         "product_title": "iPhone Charger Cable",
         "product_image": "https://www.primebazar.com/public/uploads/all/chOYFjXvz2FbjQ9vJmnTNnmsiZGaERst32Grr5GW.jpg",
-        "category": "iPhone Accessories",
+        "category": "iPhone",
         "price": 14.99,
         "description": "Fast charging USB-C to Lightning cable for iPhone with durable braided design.",
         "Specification": [

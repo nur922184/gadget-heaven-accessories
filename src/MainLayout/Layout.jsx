@@ -11,7 +11,7 @@ const Layout = () => {
            <Navber></Navber>
             {/* dynamic section */}
             <Outlet></Outlet>
-            <div className='min-h-[calc(100vh-152px)]'> </div>
+            <div className=''> </div>
             {/* footer */}
             <Footer></Footer>
         </div>

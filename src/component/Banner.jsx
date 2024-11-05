@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className="bg-purple-600 text-center py-20 h-1/3 text-white">
+        <div className="bg-purple-600 text-center py-20 -h-[10%] text-white">
           {/* Container for Title, Subtitle, and Button */}
           <div className="max-w-3xl mx-auto px-4">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">

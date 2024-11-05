@@ -45,7 +45,7 @@ const testimonialsData = [
 
 const Testimonials = () => {
     return (
-        <section className="-mb-[450px]">
+        <section className="">
             <div className="bg-purple-600 text-center py-10 text-white">
                 {/* Container for Title, Subtitle, and Button */}
                 <div className="max-w-3xl mx-auto px-4">
@@ -65,7 +65,7 @@ const Testimonials = () => {
                         {testimonialsData.map((testimonial, index) => (
                             <div
                                 key={index}
-                                className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                                className="transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-white duration-300 "
                             >
                                 <img
                                     src={testimonial.image}

@@ -10,7 +10,8 @@ import Home from './Pages/Home';
 import Dashborad from './Pages/Dashborad';
 import Statistics from './Pages/Statistics';
 import Testimonials from './Pages/Testimonials';
-import NotFound from './Pages/NotFound';
+import NotFound from './Pages/NotFound'
+import ProductDetails from './component/ProductDetails';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: ()=> fetch ('../categories.json'),
+        children:[
+          {
+            path: "/product/:product",
+            element: <ProductDetails></ProductDetails>,
+            loader: ()=> fetch ('../product.json'),
+          }
+        ],
       }, 
       {
         path: "/statistics",
@@ -35,6 +44,14 @@ const router = createBrowserRouter([
       },
     ]
   },
+  {
+    path: "/products", 
+    element: <ProductDetails></ProductDetails>
+  }, 
+  // {
+  //   path: "/",
+  //   element: <App></App>
+  // },
   {
     path:"*", 
     element: <NotFound></NotFound>
