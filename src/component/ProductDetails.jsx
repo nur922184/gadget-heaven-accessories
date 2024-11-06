@@ -1,7 +1,9 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState,  } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { HiShoppingCart } from 'react-icons/hi';
 import { FaHeart } from 'react-icons/fa';
+import { AddFavorite, } from '../Utils';
+import { AddProduct } from '../Utils/addToProduct';
 // import { CartContext } from '../context/CartContext';
 const ProductDetails = () => {
     useEffect(() => {
@@ -19,6 +21,15 @@ const ProductDetails = () => {
                 setProduct(selectedProduct);
             });
     }, [id]);
+
+    // handle favariter wisslist
+    const addToWishList = product =>{
+        AddFavorite(product)
+        // getAllFaverites()
+    }
+    const addToProList = product =>{
+      AddProduct(product)  
+    }
 
     if (!product) return <p>Loading...</p>;
     return (
@@ -57,12 +68,12 @@ const ProductDetails = () => {
                         <div>
                             <div className='flex'>
                                 <button
-                                    onClick={() => addToCart(product)}
+                                   onClick={() => addToProList(product)}
                                     className="mt-4 px-4 py-2 bg-purple-500 text-white rounded-lg flex">
                                     <HiShoppingCart className="text-xl cursor-pointer mr-3" />
                                     Add to Cart
                                 </button>
-                                <button  onClick={() => addToCart(product)}>
+                                <button onClick={() => addToWishList(product)}>
                                     <FaHeart className="text-xl cursor-pointer ml-8 mt-4" /></button>
                             </div>
                         </div>
