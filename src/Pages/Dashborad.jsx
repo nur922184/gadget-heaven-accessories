@@ -3,12 +3,29 @@ import { getAllFaverites } from '../Utils';
 import { Link } from 'react-router-dom';
 import { getAllAddedPro } from '../Utils/addToProduct';
 import { HiAdjustments } from 'react-icons/hi';
+import images from '../image/Group.png'
 
 const Dashborad = () => {
     // const {} = useContext(CartContext)
     const [wish, setWish] = useState([])
     const [Cart, setToCart] = useState([])
     const [showWishlist, setShowWishlist] = useState(false);
+    const [sortOrder, setSortOrder] = useState('asc');
+
+
+    const handleSortByPrice = () => {
+        // Toggle sort order between ascending and descending
+        const newSortOrder = sortOrder === 'asc' ? 'desc' : 'asc';
+        setSortOrder(newSortOrder);
+
+        const sortedCart = [...Cart].sort((a, b) => {
+            return newSortOrder === 'asc' ? a.price - b.price : b.price - a.price;
+        });
+
+        setToCart(sortedCart);
+    };
+
+
     useEffect(() => {
         const favorites = getAllFaverites()
         setWish(favorites)
@@ -80,7 +97,9 @@ const Dashborad = () => {
                                     >
                                         &times;
                                     </button>
+
                                 </div>
+
                             ))
                         ) : (
                             <p>No favorites found</p>
@@ -88,21 +107,35 @@ const Dashborad = () => {
                     </div>
                 ) : (
                     <div className='w-[75%] m-auto'>
-                        <div className='flex justify-between'>
+                        <div className='flex justify-between mb-9'>
                             <div>
                                 <h2 className="text-2xl font-bold mb-4">Dashboard - Cart Items</h2>
                             </div>
                             <div className="flex items-center space-x-4">
                                 <p className="font-bold text-lg">
-                                    Total cost: <span className="text-gray-800">{}</span>
+                                    Total cost: 1199.99 <span className="text-gray-800">{ }</span>
                                 </p>
-                                <button className="flex items-center space-x-1 px-4 py-2 border-2 border-purple-500 text-purple-500 rounded-full font-semibold hover:bg-purple-100 transition">
+                                <button onClick={handleSortByPrice} className="flex items-center space-x-1 px-4 py-2 border-2 border-purple-500 text-purple-500 rounded-full font-semibold hover:bg-purple-100 transition">
+                                
                                     <span>Sort by Price</span>
                                     <HiAdjustments></HiAdjustments>
                                 </button>
-                                <button className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full font-semibold hover:from-purple-600 hover:to-pink-600 transition">
-                                    Purchase
-                                </button>
+                                <label htmlFor="my_modal_6" className="btn px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full font-semibold hover:from-purple-600 hover:to-pink-600 transition">Purchase</label>
+
+                                {/* Put this part before </body> tag */}
+                                <input type="checkbox" id="my_modal_6" className="modal-toggle" />
+                                <div className="modal" role="dialog">
+                                    <div className="modal-box text-center">
+                                        <img className='m-auto' src={images} alt="" />
+                                        <h3 className="text-lg font-bold">Payment Successfully</h3>
+                                        <p className="py-4">TThanks for purchasing.</p>
+                                        <p className="py-4">Total:2449.96</p>
+                                        <div className="modal-action">
+                                            <label htmlFor="my_modal_6" className="btn w-full rounded-full bg-purple-200">Close!</label>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
