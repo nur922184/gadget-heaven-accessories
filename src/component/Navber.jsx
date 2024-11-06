@@ -23,7 +23,7 @@ const Navber = () => {
     return (
         <nav className=" sticky top-0 z-10 b backdrop-filter backdrop-blur-lg flex items-center justify-between p-4 shadow-md">
             {/* Brand */}
-            <div className="hover:scale-110 hover:-translate-y-1 transition text-2xl font-bold text-gray-800">Gadget Heaven</div>
+            <div className="hover:scale-110 hover:-translate-y-1 transition text-2xl font-bold text-gray-800"> <Link>Gadget Heaven</Link> </div>
 
             {/* Desktop Links */}
             <ul className="hidden md:flex space-x-8 text-gray-700">

@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Statistics = () => {
+    useEffect(() => {
+        document.title = "Gadget Heaven || Statistics";
+      }, []);
     return (
         <div>
             <div className="bg-purple-600 text-center py-10 h-[10%] text-white">

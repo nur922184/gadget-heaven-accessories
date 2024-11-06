@@ -4,6 +4,9 @@ import { HiShoppingCart } from 'react-icons/hi';
 import { FaHeart } from 'react-icons/fa';
 // import { CartContext } from '../context/CartContext';
 const ProductDetails = () => {
+    useEffect(() => {
+        document.title = "Gadget Heaven || Home || Details";
+      }, []);
     const { id } = useParams();
     // const { addToCart } = useContext(CartContext); // Access addToCart from context
     const [product, setProduct] = useState(null);

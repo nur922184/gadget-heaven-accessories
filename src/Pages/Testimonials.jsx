@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 
 const testimonialsData = [
     {
@@ -44,6 +45,10 @@ const testimonialsData = [
   
 
 const Testimonials = () => {
+
+  useEffect(() => {
+    document.title = "Gadget Heaven || Testimonials";
+  }, []);
     return (
         <section className="">
             <div className="bg-purple-600 text-center py-10 text-white">

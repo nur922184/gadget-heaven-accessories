@@ -1,8 +1,12 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
+import { CartContext } from '../context/CartContext';
 // import { CartContext } from '../context/CartContext';
 
 const Dashborad = () => {
-    // const { cartItems } = useContext(CartContext)
+    // const {} = useContext(CartContext)
+    useEffect(() => {
+        document.title = "Gadget Heaven || Dashboard";
+      }, []);
 
     return (
         <div>
@@ -25,15 +29,15 @@ const Dashborad = () => {
             </div>
             <div className="p-4">
                 <h2 className="text-2xl font-bold mb-4">Dashboard - Cart Items</h2>
-                {/* <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                    {cartItems.map((item, index) => (
+                <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                    {/* {product.map((item, index) => (
                         <div key={index} className="border rounded-lg p-4 bg-white">
                             <img src={item.product_image} alt={item.product_title} className="h-32 w-full object-cover rounded-lg mb-4" />
                             <h3 className="font-bold text-lg">{item.product_title}</h3>
                             <p className="text-gray-600">Price: ${item.price}</p>
                         </div>
-                    ))}
-                </div> */}
+                    ))} */}
+                </div>
             </div>
         </div>
     );

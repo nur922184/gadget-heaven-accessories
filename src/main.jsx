@@ -12,7 +12,7 @@ import Statistics from './Pages/Statistics';
 import Testimonials from './Pages/Testimonials';
 import NotFound from './Pages/NotFound'
 import ProductDetails from './component/ProductDetails';
-
+import React from 'react';
 const router = createBrowserRouter([
   {
     path: "/",
