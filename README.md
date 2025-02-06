@@ -4,11 +4,11 @@ Welcome to the Product Showcase Application! This application allows users to ex
 
 ## Live Website Link
 
-[Live Demo]([https://your-live-website-link.com](https://magical-gumption-061d0e.netlify.app/))
+[Live Demo](https://magical-gumption-061d0e.netlify.app/)
 
 ## Requirement Document Link
 
-[Requirements Document](https://github.com/programming-hero-web-course2/b10a8-gadget-heaven-nur922184)
+[Requirements Document](https://github.com/nur922184/gadget-heaven-accessories)
 
 ## React Fundamental Concepts Used
 
